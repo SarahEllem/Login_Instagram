@@ -1,0 +1,152 @@
+*{ 
+    margin: 0;
+    box-sizing: border-box; 
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+
+body{
+    width: 100%;
+    background-color: #fafafa;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.insta-phone{
+    background: url(../img/phone.png) no-repeat;
+    position: relative;
+    top: 22px;
+    width: 450px;
+    padding-bottom: 31px;
+}
+.insta-phone img{ 
+    position: relative;
+    top: 28px;
+    left: 80px;
+    width: 242px;
+    margin: 70px;
+}
+
+.insta-login{ margin-top: 55px; } 
+.login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 350px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #dbdbdb;
+    border-radius: 3px;
+}
+.login__logo img{
+    width: 180px;
+    margin: 8px 0;
+    opacity: 0.9;
+}
+.login__form{
+    display: flex;
+    flex-direction: column;
+}
+.login__form input{
+    width: 270px;
+    height: 37px;
+    margin-bottom: 10px;
+    padding-left: 10px;
+    background-color: #fafafa;
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 3px;
+    font-size: 12px;
+    outline: none;
+}
+.login-btn{
+    height: 30px;
+    border-radius: 3px;
+    margin: 5px 0;
+    border: none;
+    background-color: #0095f6;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.login-span{
+    display: flex;
+    margin: 13px 0;
+}
+.login-span p{
+    padding: 0 20px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #969696;
+    text-transform: uppercase;
+}
+.login-span__linha{
+    width: 95px;
+    height: 1px;
+    background-color: #b4b4b4;
+    position: relative;
+    top: 8px;
+    opacity: 0.5;
+}
+.login__link{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+.login__link .login__link--facebook{
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    font-size: 14px;
+    color: #385185;
+    font-weight: 600;
+}
+.login__link .login__link--facebook img{ 
+    margin-right: 5px;
+    width: 17px;
+}
+.login__link a{
+    text-align: center;
+    padding: 10px;
+    color: #00376b;
+    font-size: 13px;
+}
+
+.cadastre{
+    padding: 20px;
+    font-size: 15px;
+}
+.cadastre a{ 
+    color: #0095f6;
+    font-weight: 600;
+}
+
+.aplicativo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    margin-top: 25px;
+}
+.aplicativo__btn img{
+    margin-top: 20px;
+    width: 140px;
+}
+
+@media(max-width: 875px){
+    .insta-phone{ display: none;}
+}
+@media(max-width: 450px){
+    .insta-login{ margin-top: 0;}
+    .login{
+        width: 100%;
+        background: #fafafa;
+        border: none;
+    }
+    .aplicativo__btn img{ width: 130px;}
+    .login__form input{ width: 200px;}
+}
